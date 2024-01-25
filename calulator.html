@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background-color: black;
+                height: 50vh;
+                width: 30%;
+                margin: 10%;
+            }
+            .dis{
+                display: flex;
+                background: transparent;
+                height: 10%;
+                width: 100%;
+                padding: 19px;
+                margin: -5%;
+color: white;
+            }
+            .dis input{
+                height: 100%;
+                width: 100%;
+                padding-bottom: 20px;
+            }
+            .main button{
+                  height: 60px;
+                  width: 60px;
+                  box-shadow: -8px -8px 15px rgba(255,255,255,0.1);
+                  border: 1px solid yellow ;
+                  border-radius: 100%;
+                  background: transparent;
+                  color: white;
+                  cursor: pointer;
+            }
+          
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="calculator">
+                <div class="dis">
+<input id="display" placeholder="">
+                </div>
+                
+                <div class="main">
+                    <button type="button " >CLT</button>
+                    <button type="button" onclick="display.value = display.value.slice(0,-1) " >del</button>
+                    <button type="button"  onclick=" display.value ='' ">AC</button>
+                    <button type="button"  onclick=" display.value +='+' ">+</button>
+
+                </div>
+                <div class="main">
+                    <button type="button" onclick=" display.value +='7' ">7</button>
+                    <button type="button"  onclick=" display.value +='8' ">8</button>
+                    <button type="button" onclick=" display.value +='9' ">9</button>
+                    <button type="button"  onclick=" display.value +='*' ">*</button>
+
+                </div>
+                <div class="main">
+                    <button type="button"  onclick=" display.value +='6' ">6</button>
+                    <button type="button"  onclick=" display.value +='5' ">5</button>
+                    <button type="button"  onclick=" display.value +='4' ">4</button>
+                    <button type="button"  onclick=" display.value +='/' ">/</button>
+
+                </div>
+                <div class="main">
+                    <button type="button"  onclick=" display.value +='3' ">3</button>
+                    <button type="button"  onclick=" display.value +='2' ">2</button>
+                    <button type="button"  onclick=" display.value +='1' ">1</button>
+                    <button type="button"  onclick=" display.value +='.' ">.</button>
+
+                </div>
+                <div class="main">
+                    <button type="button"  onclick=" display.value +='0' ">0</button>
+                    <button type="button"  onclick=" display.value +='00' ">00</button>
+                    <button type="button"  onclick=" display.value = eval(display.value) " class="eualbtn">=</button>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

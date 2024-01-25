@@ -1,0 +1,425 @@
+.container{
+    background-color:white;
+    height: 90px;
+    width: 100%;
+
+    }
+
+   
+
+    ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:#202C45;
+padding-left: 13%;
+
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 15px;
+font-weight: 500;
+}
+
+li a:hover {
+background-color: #111;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
+/* heading */
+  .row{
+    
+    background-color: white;
+    display: flex;
+    justify-content: left;
+height: 30%;
+top: 50px;
+padding-top: 1%;
+  }
+
+  .row .column-symbol img {
+   position: absolute;
+   left: 180px;
+  }
+
+  .column-name h2{
+
+    padding-left:20%;
+    position: absolute;
+  top: 10%;
+  }
+
+  .row .column-rate img{
+    position: absolute;
+   left: 70%;
+  }
+
+  /* header */
+  #head_section{
+    overflow: hidden;
+    background-color: #0098DB;
+    padding-left: 40px;
+
+  }
+  #head_section a{
+    float: left;
+    color: white;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 12px;
+    text-align: center;
+    
+  }
+
+  #head_section .logo{
+padding-left: 80%;
+  }
+
+
+  /* msu pic and button */
+
+.pics{
+  overflow: hidden;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: left;
+
+
+}
+ .pic_btn  ul {
+  list-style-type: none;
+  margin: 0;
+  
+  width: 245px;
+  background-color:#0098DB;
+  padding: 3%;
+}
+.pic_btn .btn1  li a {
+  display: block;
+  color:white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #5f5d5d;
+font-size: 15px;
+  line-height: 48px;
+}
+.pic_btn2{
+  padding-left: 69%;
+}
+.pic_btn2  ul {
+  list-style-type: none;
+  margin: 0;
+  width: 200px;
+  background-color:#0098DB;
+  padding: 3%;
+  
+
+}
+.pic_btn2 .btn2  li a {
+  display: block;
+  color:white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #5f5d5d;
+font-size: 15px;
+  line-height: 48px;
+}
+
+.maindiv{
+  height: 400px;
+  width: 68%;
+  position: absolute;
+  animation:slider 15s infinite linear ;
+  transform: translate(-50%,-50%);
+  top: 58%;
+  left: 50.9%;
+  background-size: 100% 100%;
+ /* background-image: url('https://msubaroda.ac.in/asset/storage/slider/arts4.jpg');  */
+}
+@keyframes slider {
+  0%{background-image: url('https://msu-new-2023-ec2-ubuntu-unzip.s3.ap-south-1.amazonaws.com/asset/storage/slider/vlcsnap-2021-09-01-15h40m27s399.jpg');}
+  35%{background-image: url('https://msu-new-2023-ec2-ubuntu-unzip.s3.ap-south-1.amazonaws.com/asset/storage/slider/Distinguished-Alumni_GREY-BG.png');}
+  75%{background-image: url('https://msu-new-2023-ec2-ubuntu-unzip.s3.ap-south-1.amazonaws.com/asset/storage/slider/Distinguished-Alumni_GREY-BG.png');}
+  
+}
+
+
+/* buttons */
+
+.btn-0  img{
+height: 25px;
+
+}
+.btn-1 img{
+  height: 25px;
+}
+
+
+.btn-0{
+  
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 12px;
+  padding: 0 32px;
+ display: inline block;
+ text-align: center;
+
+
+}
+
+
+.btn-1{
+  
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 12px;
+  padding: 0 32px;
+ display: inline block;
+ text-align: center;
+}
+
+.btn-series{
+  padding-top: 20px;
+}
+
+/* disclaimer */
+marquee{
+  margin-top: 2%;
+  width: 100%;
+  height: 50px;
+  background:#0098DB ;
+  behavior: scroll;
+  font-size: 20px;
+  justify-content: center;
+}
+marquee a{
+  text-align: center;
+  border-right: 1px solid black;
+padding-top: 5px;
+color: white;
+}
+marquee img{
+  height: 30px;
+  padding-top: 7px;
+
+}
+
+
+  /* know about university */
+
+  .rows{
+    background-color:  rgba(32, 44, 69, 0.9);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+ 
+  }
+  .info{
+    padding-top:10px;
+  }
+ 
+.rows .columns-logo{
+  padding-top: 30px;
+  padding-right: 80px;
+}
+
+.rows .columns{
+  text-align: left;
+  margin: 80px;
+}
+/* our academics */
+
+.column {
+  float: left;
+  width:25%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.column img{
+  width: 80%;
+  height:200px;
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+  display: block;
+  justify-content: center;
+}
+
+/* cells */
+
+.cells{
+  margin-top:10%;
+  width: 100%;
+  height: 120px;
+  background:#202C45 ;
+  behavior: scroll;
+  font-size: 20px;
+  justify-content: center;
+
+  display: block;
+  position: relative;
+}
+.cells img{
+height: 100px;
+justify-content: center;
+padding-top: 10px;
+
+}
+.cells a{
+padding: 10px;
+}
+
+  /* footer */
+.footer{
+  display:flex;
+  justify-content: left;
+  height: 350px;
+  width: 100%;
+  background-color:black;
+  margin-top: 1%;
+  overflow: hidden;
+
+}
+
+.msu{
+
+  padding-left: 10%;
+}
+.msu img{
+  padding-top: 10%;
+}
+.head-info{
+  padding-left: 1%;
+  color: white;
+  margin: 3%;
+  font-size: 15px;
+
+}
+.head-info h4{
+  padding-top: 3%;
+  font-size: 15px;
+  color: gray;
+}
+ .head-info #social_media{
+
+color: gray;
+
+}
+ #social_media a{
+
+border-style: solid;
+padding: 5px;
+margin: 2px;
+
+}
+
+/* useful links */
+.links{
+  padding-left: 1%;
+  color: white;
+  margin: 3%;
+  font-size: 15px;
+  
+}
+
+ 
+.links   ul{
+  list-style-type: none;
+ 
+  width: 200px;
+  background-color: black;
+
+box-sizing: border-box;
+
+ 
+}
+
+.links li a{
+  display: block;
+  color: gray;
+  border-bottom: 1px solid gray;
+  font-size: 15px;
+
+margin: -5%;
+
+
+
+}
+
+/* timing */
+.time{
+  padding-left: 1%;
+  color: white;
+  margin: 3%;
+  font-size: 15px;
+  
+}
+
+.time h4{
+  color: gray;
+  font-size: 15px;
+  border-bottom: 1px solid gray;
+}
+
+/* copyright */
+.copyright{
+  display:flex;
+  justify-content: left;
+  height: 50px;
+  width: 100%;
+  background-color:black;
+  margin-top: -1%;
+ 
+}
+.copyright h3{
+  color: gray;
+  font-size: 15px;
+  padding-left: 100px;
+}
+
+.copyright ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 10px;
+  width: 800px;
+  background-color: black;
+padding-left: 100px;
+}
+
+ .copyright li a{
+  display: inline;
+  color: gray;
+
+  font-size: 15px;
+
+  margin: -5%;
+  
+}

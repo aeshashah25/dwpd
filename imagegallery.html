@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>art and craft gallery</title>
+    <link rel="stylesheet" href="imagegallery.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <h1 class="heading"><b>ART & CRAFT GALLERY</b></h1>
+    <div class="full-img" id="full_imgbox">
+        <img src="https://cdn.pixabay.com/photo/2019/06/23/15/29/great-gallery-4293985_640.jpg" id="fullimg">
+        <span onclick="imgclose()" >X</span>
+    </div>
+<div class="col-3 img-gallery">
+    <img src="https://cdn.pixabay.com/photo/2017/07/31/14/56/wall-2558279_640.jpg" onclick="openimg(this.src)">
+    <img src="https://cdn.pixabay.com/photo/2016/03/27/16/23/woman-1283009_640.jpg" onclick="openimg(this.src)">
+    <img src="https://cdn.pixabay.com/photo/2019/06/23/15/29/great-gallery-4293985_640.jpg" onclick="openimg(this.src)">
+    </div>
+    <div class="col-3 img-gallery">
+    <img src="https://cdn.pixabay.com/photo/2016/08/29/21/38/peabody-institute-1629259_640.jpg" onclick="openimg(this.src)">
+    <img src="https://cdn.pixabay.com/photo/2016/03/15/12/24/student-1258137_640.jpg" onclick="openimg(this.src)">
+    <img src="https://cdn.pixabay.com/photo/2018/04/15/16/54/castle-fontainebleau-3322089_640.jpg" onclick="openimg(this.src)">
+
+
+
+</div>
+
+<script>
+    var full_imgbox=document.getElementById("full_imgbox");
+    var fullimg=document.getElementById("fullimg");
+     
+     function openimg(pic){
+        full_imgbox.style.display="flex";
+        fullimg.src=pic;
+     }
+
+     function imgclose()
+     {
+        full_imgbox.style.display="none";
+
+     }
+</script>
+</body>
+
+
+
+</html>
